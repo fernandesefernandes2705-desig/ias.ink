@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ias.ink – Iasmin Machado | Especialista em Blackwork e Old School</title>
+<meta name="description" content="Portfólio de Iasmin Machado, tatuadora há 4 anos e especialista em blackwork e old school. Solicite seu orçamento pelo WhatsApp.">
+<meta property="og:title" content="ias.ink – Iasmin Machado, tatuadora">
+<meta property="og:description" content="Blackwork e old school. Solicite seu orçamento pelo WhatsApp.">
+<meta property="og:image" content="images/t3.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%236b0f1a'/%3E%3Ctext x='32' y='45' font-size='40' text-anchor='middle' fill='%23f4ecdd' font-family='serif'%3Ei%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0a0708; --ink:#120d0e; --bordo:#6b0f1a; --bordo-2:#8a1624; --bordo-dark:#3d0810;
+  --white:#fbf8f4; --bege:#e6d9c3; --muted:#b9aea3;
+  --gothic:"Pirata One","Old English Text MT",serif;
+  --sans:"Outfit",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--black);color:var(--white);font-family:var(--sans);font-weight:300;line-height:1.65;font-size:1.0625rem;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--bege);outline-offset:3px}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+h1,h2,h3{font-family:var(--gothic);font-weight:400;line-height:1.08;letter-spacing:.02em}
+h2{font-size:clamp(2.2rem,5vw,3.4rem);margin-bottom:1.25rem}
+p{max-width:62ch}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;gap:.7rem;padding:1rem 1.7rem;border-radius:999px;background:var(--bordo);color:var(--white);text-decoration:none;font-weight:500;font-size:1rem;letter-spacing:.01em;border:1px solid var(--bordo-2);transition:background .2s,transform .2s}
+.btn:hover{background:var(--bordo-2);transform:translateY(-2px)}
+.btn svg{width:22px;height:22px;fill:currentColor;flex:none}
+.btn.light{background:var(--white);color:var(--bordo-dark);border-color:var(--white)}
+.btn.light:hover{background:var(--bege)}
+.btn.ghost{background:transparent;border-color:rgba(251,248,244,.4)}
+.btn.ghost:hover{background:rgba(251,248,244,.1)}
+
+/* topo */
+header{position:fixed;inset:0 0 auto 0;z-index:30;background:linear-gradient(var(--black),rgba(10,7,8,.0));padding-block:.8rem}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;font-family:var(--gothic);font-size:1.8rem;letter-spacing:.03em}
+.brand img{width:40px;height:40px;border-radius:50%;object-fit:cover;object-position:50% 50%;border:1.5px solid var(--bordo-2)}
+nav ul{display:flex;gap:1.6rem;list-style:none;align-items:center}
+nav a{text-decoration:none;font-size:.95rem;color:var(--muted);transition:color .2s}
+nav a:hover{color:var(--white)}
+nav .btn{padding:.55rem 1.1rem;font-size:.9rem;color:var(--white)}
+
+/* hero */
+.hero{min-height:100svh;display:grid;align-items:center;padding:7rem 0 4rem;background:radial-gradient(60% 55% at 78% 45%,rgba(107,15,26,.55),transparent 70%),var(--black);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(5rem,15vw,10.5rem);letter-spacing:.02em;margin-left:-.03em}
+.hero .tag{font-size:clamp(1.15rem,2.2vw,1.45rem);margin:.8rem 0 2rem;font-weight:400}
+.hero p.sub{color:var(--muted);margin-bottom:2rem}
+.hero .actions{display:flex;flex-wrap:wrap;gap:.9rem}
+.portrait{justify-self:center;position:relative;width:min(calc(100% - 36px),340px);aspect-ratio:1;margin:18px}
+.portrait::before{content:"";position:absolute;inset:-18px;border-radius:50%;border:2px solid var(--bordo-2)}
+.portrait img{position:relative;width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:50% 50%}
+
+/* sobre */
+.sobre{background:var(--bege);color:#1c1214;padding:6rem 0}
+.sobre .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:4rem;align-items:center}
+.sobre img{border-radius:6px;aspect-ratio:4/5;object-fit:cover;object-position:50% 15%;width:100%;box-shadow:14px 14px 0 var(--bordo)}
+.sobre h2{color:var(--bordo)}
+.sobre p+p{margin-top:1rem}
+.sobre .facts{display:flex;gap:2.5rem;margin-top:2rem;flex-wrap:wrap}
+.sobre .facts strong{display:block;font-family:var(--gothic);font-size:2.2rem;color:var(--bordo);font-weight:400;line-height:1.1}
+.sobre .facts span{font-size:.95rem}
+
+/* trabalhos */
+.trabalhos{padding:6rem 0;background:var(--ink)}
+.trabalhos .intro{margin-bottom:2.5rem}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.item{position:relative;border:0;background:#000;padding:0;cursor:zoom-in;border-radius:4px;overflow:hidden;aspect-ratio:4/5}
+.item img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.item:hover img{transform:scale(1.04)}
+.item span{position:absolute;left:.9rem;top:.9rem;background:rgba(10,7,8,.75);border:1px solid var(--bordo-2);color:var(--white);font-size:.85rem;padding:.2rem .75rem;border-radius:999px;font-family:var(--sans)}
+.cta-tile{grid-column:span 2;background:var(--bordo);border-radius:4px;padding:2rem;min-height:260px;display:flex;flex-direction:column;justify-content:space-between}
+.cta-tile h3{font-size:clamp(2.2rem,4.2vw,3.4rem)}
+.cta-tile p{font-size:.98rem;margin:.6rem 0 1.2rem}
+
+/* serviços */
+.servicos{padding:6rem 0;background:var(--black)}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(251,248,244,.16);border:1px solid rgba(251,248,244,.16);margin-top:2.5rem}
+.card{background:var(--black);padding:2.2rem}
+.card h3{font-size:2rem;color:var(--white);margin-bottom:.6rem}
+.card p{color:var(--muted);font-size:1rem}
+.card:first-child,.card:nth-child(2){background:linear-gradient(160deg,var(--bordo-dark),var(--black) 75%)}
+
+/* processo */
+.processo{background:var(--bordo);padding:6rem 0}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.8rem;margin-top:2.5rem;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;border-top:1px solid rgba(251,248,244,.5);padding-top:1rem}
+.steps li::before{content:counter(s);font-family:var(--gothic);font-size:2.4rem;display:block;line-height:1}
+.steps h3{font-family:var(--sans);font-weight:600;font-size:1.1rem;margin:.6rem 0 .3rem}
+.steps p{font-size:.97rem;color:#f0dcdc}
+
+/* contato */
+.contato{padding:6rem 0;text-align:center;background:radial-gradient(50% 70% at 50% 100%,rgba(107,15,26,.5),transparent),var(--black)}
+.contato h2{font-size:clamp(2.6rem,7vw,5rem)}
+.contato p{margin:0 auto 2rem}
+.contato .links{display:flex;justify-content:center;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
+footer{padding:2rem 0 5.5rem;text-align:center;color:var(--muted);font-size:.9rem;border-top:1px solid rgba(251,248,244,.12)}
+footer b{font-family:var(--gothic);font-size:1.5rem;color:var(--white);font-weight:400}
+
+/* whatsapp fixo */
+.wpp{position:fixed;right:1.1rem;bottom:1.1rem;z-index:40;display:flex;align-items:center;gap:.6rem;background:var(--bordo);color:var(--white);text-decoration:none;padding:.85rem 1.2rem;border-radius:999px;border:1px solid var(--bordo-2);font-weight:500;box-shadow:0 8px 28px rgba(0,0,0,.55)}
+.wpp:hover{background:var(--bordo-2)}
+.wpp svg{width:24px;height:24px;fill:currentColor}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.94);display:none;align-items:center;justify-content:center;padding:1.2rem}
+.lb.open{display:flex}
+.lb img{max-height:88vh;border-radius:4px}
+.lb button{position:absolute;top:1rem;right:1.2rem;background:none;border:1px solid rgba(255,255,255,.4);color:var(--white);width:44px;height:44px;border-radius:50%;font-size:1.4rem;cursor:pointer}
+
+img,svg{max-width:100%}
+.btn{text-align:center}
+@media (max-width:1100px){
+  .wrap{width:min(1120px,100% - 3rem)}
+  .hero .wrap{gap:2rem}
+  .sobre .wrap{gap:3rem}
+  .steps{grid-template-columns:repeat(2,1fr);gap:2rem}
+}
+@media (max-width:860px){
+  html{scroll-padding-top:64px}
+  nav ul li:not(:last-child){display:none}
+  .hero{min-height:auto;padding:6.5rem 0 4rem}
+  .hero .wrap,.sobre .wrap{grid-template-columns:1fr}
+  .hero .wrap{text-align:center;justify-items:center}
+  .hero .actions{justify-content:center}
+  .portrait{order:-1;width:min(60%,250px);margin-bottom:1.2rem}
+  .sobre,.trabalhos,.servicos,.processo,.contato{padding:4.5rem 0}
+  .sobre .wrap{gap:3rem}
+  .sobre img{max-width:340px;box-shadow:10px 10px 0 var(--bordo)}
+  .grid{grid-template-columns:repeat(2,1fr);gap:.7rem}
+  .cta-tile{padding:1.6rem;min-height:220px}
+  .cards{grid-template-columns:1fr}
+  .wpp span{display:none}
+  .wpp{padding:.95rem}
+}
+@media (max-width:520px){
+  body{font-size:1rem}
+  .wrap{width:min(1120px,100% - 2rem)}
+  .brand{font-size:1.6rem}
+  nav .btn{padding:.5rem .95rem;font-size:.85rem}
+  .hero .actions{flex-direction:column;width:100%}
+  .hero .actions .btn{justify-content:center;width:100%}
+  .sobre .facts{gap:1.6rem}
+  .sobre img{max-width:100%}
+  .grid{gap:.5rem}
+  .item span{left:.5rem;top:.5rem;font-size:.75rem;padding:.15rem .55rem}
+  .card{padding:1.6rem}
+  .steps{grid-template-columns:1fr}
+  .contato .links .btn,.contato>.wrap>.btn{width:100%;justify-content:center}
+  .contato .links{flex-direction:column}
+  footer{padding-bottom:5rem}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#topo" aria-label="ias.ink, início"><img src="images/iasmin.jpg" alt="">ias.ink</a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#trabalhos">Trabalhos</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a class="btn js-wpp" href="#" target="_blank" rel="noopener">Orçamento</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="topo">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>ias.ink</h1>
+      <p class="tag">Especialista em Blackwork e Old School</p>
+      <div class="actions">
+        <a class="btn js-wpp" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.8 2 6.8L3 29l6.6-2c1.9 1 4 1.6 6.3 1.6 7.200 0 13-5.700 13-12.800S23.200 3 16 3zm0 23.200c-2 0-3.900-.6-5.600-1.600l-.4-.2-3.900 1.200 1.200-3.800-.3-.4A10.300 10.300 0 0 1 5.600 15.800C5.600 10.100 10.200 5.500 16 5.500s10.400 4.600 10.400 10.300S21.700 26.200 16 26.200zm5.700-7.700c-.3-.2-1.900-.9-2.200-1-.3-.1-.5-.2-.7.200s-.8 1-1 1.200c-.2.200-.4.200-.7.100-.3-.2-1.400-.5-2.600-1.600-1-.9-1.600-1.900-1.800-2.200-.2-.3 0-.5.100-.7l.5-.6c.2-.2.200-.3.300-.5.100-.2.100-.4 0-.6l-1-2.300c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.100-.9.400-.3.300-1.200 1.100-1.200 2.700s1.200 3.100 1.400 3.300c.2.200 2.300 3.600 5.600 4.900 3.300 1.300 3.300.9 3.900.8.600-.1 1.900-.8 2.200-1.500.3-.8.300-1.400.2-1.500-.1-.2-.3-.3-.6-.4z"/></svg>Solicite seu orçamento</a>
+        <a class="btn ghost" href="#trabalhos">Ver trabalhos</a>
+      </div>
+    </div>
+    <div class="portrait"><img src="images/iasmin.jpg" alt="Iasmin Machado tatuando um braço"></div>
+  </div>
+</section>
+
+<section class="sobre" id="sobre">
+  <div class="wrap">
+    <img src="images/iasmin-sobre.jpg" alt="Iasmin Machado em atendimento no estúdio" loading="lazy">
+    <div>
+      <h2>Sobre mim</h2>
+      <p>Prazer, eu sou a Iasmin. Tatuo há 4 anos e sou especialista em blackwork e old school, dois estilos em que o contraste e a leitura clara do desenho fazem toda a diferença. É nisso que eu me aprofundo e é onde entrego o meu melhor trabalho.</p>
+      <p>Cada projeto começa numa conversa: entendo a sua ideia, adapto o desenho ao local do corpo e só então parto para a sessão. O resultado é uma tatuagem com a sua história, pensada para envelhecer bem.</p>
+      <div class="facts">
+        <div><strong>4 anos</strong><span>de experiência</span></div>
+        <div><strong>Especialista</strong><span>em blackwork e old school</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trabalhos" id="trabalhos">
+  <div class="wrap">
+    <div class="intro">
+      <h2>Trabalhos</h2>
+      <p>Alguns dos meus trabalhos recentes. Toque em uma imagem para ampliar.</p>
+    </div>
+    <div class="grid">
+      <button class="item" data-src="images/t1.jpg"><img src="images/t1.jpg" alt="Tatuagem blackwork de figura demoníaca com chifres na panturrilha" loading="lazy"><span>Blackwork</span></button>
+      <button class="item" data-src="images/t3.jpg"><img src="images/t3.jpg" alt="Tatuagem de caveira com serpente no antebraço" loading="lazy"><span>Old school</span></button>
+      <button class="item" data-src="images/t5.jpg"><img src="images/t5.jpg" alt="Tatuagem de floresta com lua e raízes no antebraço" loading="lazy"><span>Blackwork</span></button>
+      <button class="item" data-src="images/t2.jpg"><img src="images/t2.jpg" alt="Tatuagem blackwork com olho e geometria no tornozelo" loading="lazy"><span>Blackwork</span></button>
+      <div class="cta-tile">
+        <h3>A próxima pode ser a sua.</h3>
+        <div>
+          <p>Conte sua ideia e receba um orçamento sem compromisso.</p>
+          <a class="btn light js-wpp" href="#" target="_blank" rel="noopener">Solicite seu orçamento</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="servicos" id="servicos">
+  <div class="wrap">
+    <h2>Serviços</h2>
+    <p>Trabalho com projetos autorais e adaptações da sua referência, sempre no meu traço.</p>
+    <div class="cards">
+      <article class="card"><h3>Blackwork</h3><p>Preenchimentos sólidos, contrastes fortes e composições que ocupam bem o corpo. Do pequeno ao fechamento de braço e perna.</p></article>
+      <article class="card"><h3>Old school</h3><p>Contorno marcado, formas diretas e cores chapadas. Tatuagens que continuam legíveis com os anos.</p></article>
+      <article class="card"><h3>Projeto personalizado</h3><p>Você traz a ideia e as referências, eu desenho o projeto e ajusto tamanho e posição antes da sessão.</p></article>
+      <article class="card"><h3>Orçamento e agendamento</h3><p>Orçamento feito pelo WhatsApp, com valor e data combinados antes da sessão. Para reservar o seu horário, é cobrado um sinal.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="processo" id="processo">
+  <div class="wrap">
+    <h2>Como funciona</h2>
+    <ol class="steps">
+      <li><h3>Chame no WhatsApp</h3><p>Envie a ideia, referências, tamanho e o local do corpo.</p></li>
+      <li><h3>Receba o orçamento</h3><p>Valor e prazo combinados com você, sem pressa.</p></li>
+      <li><h3>Aprove e pague o sinal</h3><p>Ajustamos o desenho até ficar do jeito que você imaginou. O sinal garante a sua data na agenda.</p></li>
+      <li><h3>Faça a sessão</h3><p>Dia marcado, tatuagem feita e orientações de cuidados.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="contato" id="contato">
+  <div class="wrap">
+    <h2>Vamos tatuar?</h2>
+    <p>Mande uma mensagem com a sua ideia e eu te respondo com o orçamento.</p>
+    <a class="btn js-wpp" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.8 2 6.8L3 29l6.6-2c1.9 1 4 1.6 6.3 1.6 7.200 0 13-5.700 13-12.800S23.200 3 16 3zm0 23.200c-2 0-3.900-.6-5.600-1.600l-.4-.2-3.900 1.200 1.200-3.800-.3-.4A10.300 10.300 0 0 1 5.600 15.800C5.600 10.100 10.200 5.500 16 5.500s10.400 4.600 10.400 10.300S21.700 26.200 16 26.200zm5.700-7.700c-.3-.2-1.900-.9-2.200-1-.3-.1-.5-.2-.7.200s-.8 1-1 1.200c-.2.200-.4.200-.7.100-.3-.2-1.400-.5-2.600-1.600-1-.9-1.600-1.900-1.800-2.200-.2-.3 0-.5.100-.7l.5-.6c.2-.2.200-.3.300-.5.100-.2.100-.4 0-.6l-1-2.300c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.100-.9.400-.3.300-1.200 1.100-1.200 2.700s1.200 3.100 1.400 3.300c.2.200 2.300 3.600 5.600 4.900 3.300 1.300 3.300.9 3.900.8.600-.1 1.900-.8 2.200-1.500.3-.8.300-1.400.2-1.500-.1-.2-.3-.3-.6-.4z"/></svg>Solicite seu orçamento</a>
+    <div class="links">
+      <a class="btn ghost" href="https://www.instagram.com/iass.ink" target="_blank" rel="noopener">Instagram</a>
+      <a class="btn ghost" href="https://www.tiktok.com/@mintiss_ias" target="_blank" rel="noopener">TikTok</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><b>ias.ink</b><br>© 2026 Iasmin Machado. Todos os direitos reservados.</div></footer>
+
+<a class="wpp js-wpp" href="#" target="_blank" rel="noopener" aria-label="Solicite seu orçamento no WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.8 2 6.8L3 29l6.6-2c1.9 1 4 1.6 6.3 1.6 7.200 0 13-5.700 13-12.800S23.200 3 16 3zm0 23.200c-2 0-3.900-.6-5.600-1.600l-.4-.2-3.900 1.200 1.200-3.800-.3-.4A10.300 10.300 0 0 1 5.600 15.800C5.600 10.100 10.200 5.500 16 5.500s10.400 4.600 10.400 10.300S21.700 26.200 16 26.200zm5.700-7.700c-.3-.2-1.900-.9-2.200-1-.3-.1-.5-.2-.7.200s-.8 1-1 1.200c-.2.200-.4.200-.7.100-.3-.2-1.400-.5-2.600-1.600-1-.9-1.600-1.900-1.800-2.200-.2-.3 0-.5.100-.7l.5-.6c.2-.2.200-.3.300-.5.100-.2.100-.4 0-.6l-1-2.300c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.100-.9.400-.3.300-1.200 1.100-1.200 2.700s1.200 3.100 1.400 3.300c.2.200 2.300 3.600 5.600 4.900 3.300 1.300 3.300.9 3.900.8.600-.1 1.900-.8 2.200-1.500.3-.8.300-1.400.2-1.500-.1-.2-.3-.3-.6-.4z"/></svg><span>Solicite seu orçamento</span></a>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Imagem ampliada"><button type="button" aria-label="Fechar">×</button><img alt=""></div>
+
+<script>
+const WPP_NUMBER="5521996431691";
+const WPP_MSG="Olá, Iasmin! Vi seu portfólio e gostaria de solicitar um orçamento de tatuagem.";
+const url="https://wa.me/"+WPP_NUMBER+"?text="+encodeURIComponent(WPP_MSG);
+document.querySelectorAll(".js-wpp").forEach(a=>a.href=url);
+
+const lb=document.getElementById("lb"),lbImg=lb.querySelector("img");
+document.querySelectorAll(".item").forEach(b=>b.addEventListener("click",()=>{
+  lbImg.src=b.dataset.src;lbImg.alt=b.querySelector("img").alt;lb.classList.add("open");
+}));
+lb.addEventListener("click",()=>lb.classList.remove("open"));
+document.addEventListener("keydown",e=>{if(e.key==="Escape")lb.classList.remove("open")});
+</script>
+</body>
+</html>
